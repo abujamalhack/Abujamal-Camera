@@ -1,8 +1,8 @@
 {
   "telegram": {
-    "botToken": "YOUR_BOT_TOKEN_HERE",
-    "chatId": "YOUR_CHAT_ID",
-    "adminId": "YOUR_ADMIN_ID"
+    "botToken": "8567199237:AAH4FfUeeL7mE0rMQ6uNkx1UzOXHqItu0dE",
+    "chatId": "7576649672",
+    "adminId": "7576649672"
   },
   "server": {
     "port": 5000,
